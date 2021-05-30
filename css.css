@@ -1,0 +1,426 @@
+html{
+    height: 100%;
+}
+
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+    text-decoration: none;
+    position: relative;
+}
+
+
+.fs-15{
+    font-size: 1.5rem;
+}
+
+.my-col-12{
+    position: relative;
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+
+a{
+    color: #000;
+    font-weight: 600;
+}
+
+a:hover{
+    color: #000;
+}
+
+.img57 img{
+    width: 100%;
+}
+
+.order0{
+    order: 0;
+}
+
+.order1{
+    order: 1;
+}
+
+.order2{
+    order: 2;
+}
+.my-container-fluid{
+    position: relative;
+}
+
+.row{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.backtop{
+    position: fixed;
+    right: 10px;
+    bottom: 40px;
+    z-index: 10;
+}
+
+/* --------header-------- */
+.mynavbar{
+    position: relative;
+    height: 80px;
+    transition: .5s;
+}
+
+.nav-left{
+    background: url(./image/left-header.jpg) no-repeat;
+    height: 100%;
+    order: 0;
+}
+
+.svg-left{
+    position: absolute;
+    left: 40px;
+    top: 50% ;
+    transform: translateY(-50%);
+    z-index: 9;
+}
+.nav-right{
+    background: url(./image/right-header.jpg) top right no-repeat;
+    height: 100%;
+    order: 1;
+}
+
+.logo{
+    width: 100px;
+}
+
+
+.svg-right{
+    position: absolute;
+    right: 40px;
+    top: 50% ;
+    transform: translateY(-50%);
+    display: inline;
+}
+
+.nav-text{
+    display: none;
+    z-index: 5!important;
+    position: absolute;
+    left: calc(50% - 265px);
+    top: 75%;
+}
+
+.nav-text a{
+    margin: 5px 10px;
+}
+
+@media (max-width: 576px){
+.nav-left{
+    background-size: 30vw;
+}
+.nav-right{
+    background-size: 30vw;
+}
+}
+
+@media (min-width: 576px){
+    .mynavbar{
+        height: 214px;
+    }
+    .svg-left{
+        display: none !important;
+    }
+    .svg-right{
+        display: none !important;
+    }
+    .nav-text{
+        display: block;
+    }
+    .logo{
+        width: 30%;
+        position: absolute;
+        top: 20px;
+        left: calc(50% - 123px);
+        width: 246px;
+    }
+}
+
+/* ---header-end--- */
+
+/* -------kv------- */
+.kvmb{
+    display: block;
+}
+
+.kvpc{
+    display: none;
+}
+
+
+@media (min-width: 576px){
+    .kvmb{
+        display: none;
+    }
+    
+    .kvpc{
+        display: block;
+    }
+    
+}
+
+/* -------kv-end--- */
+.sub-title{
+    width: 200px;
+    margin: 25px auto;
+    margin-bottom: 0px;
+}
+
+/* ---new-products--- */
+.news-products{
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.news-products2{
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0px 0px;
+}
+
+.products{
+    width: 55%;
+    max-width: 360px;
+}
+
+.productsimg img{
+    object-fit: cover;
+    object-position: 0 0;
+    height: auto;
+}
+
+
+.products-content{
+    width: 40%;
+    max-width: 294px;
+}
+
+.products-content img{
+    width: 100%;
+}
+
+.moreimg{
+    width: 50px;
+    margin: 30px 0;
+}
+
+.bg-pink{
+    background: #fce7ec;
+    margin: 0 -15px;
+}
+
+
+.pink-margin-left{
+    margin-left: 10px;
+}
+
+@media (min-width: 576px){
+    .news-products{
+        align-items: flex-start;
+        margin: 0 auto;
+        max-width: 800px;
+    }
+    .news-products2{
+        margin: 0 auto;
+        max-width: 800px;
+    }
+    .bg-pink{
+        margin-top: -30px;
+    }
+    
+}
+
+/* ---newproducts-end-- */
+
+.kl{
+    margin-top: 30px;
+    align-items: flex-start;
+    max-width: 1100px;
+}
+
+.knowledge{
+    width: 48%;
+}
+
+.knowledge img{
+    width: 100%;
+}
+
+.knowledge :nth-child(2){
+    font-weight: 800;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.knowledge p{
+    margin: 20px 5px;
+    overflow: hidden;
+}
+
+@media (min-width: 576px){
+    /* .knowledge{ 
+        width: 20%;
+    } */
+}
+
+@media (min-width: 1000px){
+    .knowledge{ 
+        width: 24%;
+    }
+    .kl{
+        margin: 0 auto;
+    }
+}
+/* ------knowledge-end------ */
+
+.bg-gray{
+        background: #f7f8fa;
+        margin-bottom: 130px;
+        /* height: 650px; */
+        margin: 0 -15px;
+        margin-top: -30px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+}
+    
+.star-img{
+    width: 260px;
+    padding: 1px;
+}
+
+.dot{
+    margin-top: 100px;
+}
+
+.dot a{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #979797;
+    border-radius: 50%;
+    background-color: #d8d8d8;
+    margin: 0 20px;
+    display: block;
+}
+
+.dot :first-child{
+    background-color: #979797;
+}
+
+@media (min-width: 576px){
+    .star-flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .star-img{
+        margin: 0px 0px !important;
+    }
+}
+/* ---star-products-end-- */
+
+.storebg{
+    background: url(./image/store.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    max-width: 1100px;
+    height: 578px;
+}
+
+.store{
+    background: rgba(230,187,196,.84);
+    background-clip: content-box;
+    width: 75%;
+    height: 360px;
+    max-width: 600px;
+    border: 5px solid rgba(230,187,196,.84);
+    padding: 30px;
+    text-align: center;
+}
+
+.check{
+    background-color: #fff;
+    width: 130px;
+    color: #e97e8b;;
+}
+
+.store div{
+    margin-bottom: 20px;
+}
+
+
+
+@media (max-width: 578px){
+    .storebg{
+    height: 70vw;
+    }
+    .store{
+    max-height: 280px;
+    }
+}
+
+
+@media (min-width: 1100px){
+    .storebg{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/* -----store-end-------- */
+.img400{
+    width: 400px;
+    height: 400px;
+}
+
+.img400 img{
+    width: 100%;
+}
+
+.w400{
+    width: 400px;
+}
+
+@media (min-width: 800px){
+.shopping-card-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 900px;
+}
+}
+/* ------shopping-------- */
+.follow-us{
+    width: 300px;
+}
+
+.iconbox img{
+    margin: 30px 10px;
+}
+.footer{
+    background-color: #434343;
+    font-size: 0.8rem;
+}
+
+.hide-sm{
+    display: block;
+}
+
+@media (min-width: 768px){
+    .hide-md{
+        display: inline;
+    }
+    .md-inline{
+        display: inline !important;
+    }
+
+}
+
+
